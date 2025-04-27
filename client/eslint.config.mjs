@@ -176,12 +176,6 @@ const eslintConfig = [
       'react/jsx-no-literals': 'off',
       'react/forbid-component-props': ['off'],
       'react/jsx-max-depth': 'off',
-      'max-lines-per-function': ['error', {
-        max: 30,
-        skipBlankLines: true,
-        skipComments: true,
-        IIFEs: true
-      }],
       'one-var': ['off'],
       'sort-imports': 'off',
       'sort-keys': 'off',
