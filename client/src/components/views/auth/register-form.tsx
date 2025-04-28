@@ -12,7 +12,6 @@ import { RegisterFormData, registerSchema } from "@/components/views/auth/schema
 
 const RegisterForm = (): JSX.Element => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
 
   const {
     register,
@@ -28,8 +27,6 @@ const RegisterForm = (): JSX.Element => {
     try {
       // TODO: Implement actual registration logic here
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      setIsSuccess(true);
-      setTimeout(() => setIsSuccess(false), 2000);
     } catch {
       // TODO: Handle error
     } finally {
